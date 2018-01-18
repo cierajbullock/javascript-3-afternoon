@@ -75,7 +75,14 @@ hire (employee, reports) {
   return this.reports;
 }
 
+fire (employee, reports) {
+  this.reports.splice([employee],1);
+  return this.reports;
 }
+
+}
+
+
 
 
 
@@ -101,7 +108,26 @@ hire (employee, reports) {
   Call your new class ProgressiveManager
 */
 
-//Code Here
+class ProgressiveManager {
+  constructor() {
+    this.first_name = first_name;
+    this.last_name = last_name;
+    this.email = email;
+    this.age = age;
+    this.reports = [];
+    this.title = 'Not a manager';
+    this.bonus = 0;
+  }
+
+  titleUpdate(title) {
+
+  }
+
+  bonusUpdate(bonus) {
+    if ProgressiveManager
+  }
+    
+}
 
 
 
