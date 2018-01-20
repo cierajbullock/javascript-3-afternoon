@@ -116,7 +116,9 @@ const orders = [{"price":15,"tax":0.09},{"price":42,"tax":0.07},{"price":56,"tax
   Use a high order method to get sum of all the order totals
 */
 
-let ordersTotal = orders.reduce(function()
+let ordersTotal = orders.map(function(price, tax) {
+  return price + tax;
+})
 
 
 
@@ -136,6 +138,12 @@ const purchases = [{"owner":"Barry","price":103},{"owner":"Bob","price":75},
   Use a high order method to create to get the sum of bobsTotal.
 */
 
-let bobsTotal = 
-
+let bobsTotal = purchases.reduce(function(accum, currentVal, currentIndex) {
+  if (purchases[currentIndex].owner == "Bob") {
+    return accum + currentVal.price;
+  }
+  else {
+    return accum;
+  }
+}, 0);
 
