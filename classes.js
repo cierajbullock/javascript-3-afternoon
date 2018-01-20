@@ -109,7 +109,7 @@ fire (employee, reports) {
 */
 
 class ProgressiveManager {
-  constructor() {
+  constructor(first_name, last_name, email, age, reports) {
     this.first_name = first_name;
     this.last_name = last_name;
     this.email = email;
@@ -119,15 +119,14 @@ class ProgressiveManager {
     this.bonus = 0;
   }
 
-  titleUpdate(title) {
 
-  }
 
-  bonusUpdate(bonus) {
-    if ProgressiveManager
-  }
-    
+
 }
+
+
+    
+
 
 
 

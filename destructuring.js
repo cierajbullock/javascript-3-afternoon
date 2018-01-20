@@ -106,11 +106,4 @@ function largeNumbers ({first, second, third}) {
   Find the longest array and return that array.
 */
 
-function numberGroups ({a, b, c}) {
-  array.forEach(element => {
-    return array.length;
-  });
-  return Math.max(array.length);
-}
-
 

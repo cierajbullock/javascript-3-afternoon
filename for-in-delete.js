@@ -154,7 +154,7 @@ function removePassword (obj) {
 ////////// PROBLEM 6 //////////
 
 // Do not edit the code below.
-var deleteTheBigNumbers = {
+var numbers = {
   first: 10,
   second: 20,
   third: 110,
@@ -166,16 +166,17 @@ var deleteTheBigNumbers = {
   Write a for in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
 
-function deleteTheBigNumbers (deleteTheBigNumbers) {
-  for (var value in eleteTheBigNumbers) {
-    if (eleteTheBigNumbers[value] > 100) {
-      delete (eleteTheBigNumbers[value]);
+function deleteTheBigNumbers (obj) {
+  for (var prop in obj) {
+    if (obj[prop] > 100) {
+      delete obj[prop];
     }
   }
   return obj;
 }
 
-deleteTheBigNumbers(deleteTheBigNumbers);
+
+deleteTheBigNumbers(numbers);
 
 
 
@@ -189,14 +190,7 @@ deleteTheBigNumbers(deleteTheBigNumbers);
   Return the updated object.
 */
 
-function startsWithK (obj) {
-  for (var value in obj) {
-    if (obj[value].startsWith('k')) {
-      delete obj[value];
-    }
-  }
-  return obj;
-}
+
 
 
 
