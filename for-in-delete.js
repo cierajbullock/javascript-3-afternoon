@@ -107,7 +107,12 @@ function double (obj) {
   By the end of the for in loop, you should have a sentence, return that sentence.
 */
 
-Help
+function secrets (obj) {
+  emStr = "";
+  for (var val in obj) {
+    
+  }
+}
 
 
 /* 
@@ -161,10 +166,10 @@ var deleteTheBigNumbers = {
   Write a for in loop that deletes every property from the object deleteTheBigNumbers whose value is greater than 100.
 */
 
-function deleteTheBigNumbers (obj) {
-  for (var prop in obj) {
-    if (obj[prop] > 100) {
-      delete (obj[prop]);
+function deleteTheBigNumbers (deleteTheBigNumbers) {
+  for (var value in eleteTheBigNumbers) {
+    if (eleteTheBigNumbers[value] > 100) {
+      delete (eleteTheBigNumbers[value]);
     }
   }
   return obj;
@@ -185,9 +190,9 @@ deleteTheBigNumbers(deleteTheBigNumbers);
 */
 
 function startsWithK (obj) {
-  for (var prop in obj) {
-    if (obj[prop].startsWith('k')) {
-      delete obj[prop];
+  for (var value in obj) {
+    if (obj[value].startsWith('k')) {
+      delete obj[value];
     }
   }
   return obj;
