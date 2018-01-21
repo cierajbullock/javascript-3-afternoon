@@ -108,10 +108,16 @@ function double (obj) {
 */
 
 function secrets (obj) {
-  emStr = "";
+  emArr = [];
   for (var val in obj) {
-    
+    if (obj[val].startsWith('sh')) {
+      emArr.push(obj[val]);
+    } else {
+      emArr.push();
+    }
   }
+  emArr.join(' ');
+  return emArr;
 }
 
 
@@ -190,7 +196,15 @@ deleteTheBigNumbers(numbers);
   Return the updated object.
 */
 
-
+function startsWithK (obj) {
+  for (var val in obj) {
+    if (obj[val].startsWith('k')) {
+      delete obj[val];
+    } else {
+      return obj[val];
+    }
+  }
+}
 
 
 
